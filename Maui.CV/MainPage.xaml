@@ -18,120 +18,130 @@
                       Grid.ColumnSpan="5"
                       BackgroundColor="#00FBC1BC" />
 
-
-                <!--Line-->
-                <HorizontalStackLayout     Grid.Row="1"
-                                           Grid.Column="0"
-                                           Grid.ColumnSpan="2"
-                                           BackgroundColor="White">
-
-                    <BoxView VerticalOptions="Start"
-                             HeightRequest="1"
-                             WidthRequest="1000"
-                             BackgroundColor="LightGray" />
-
-                </HorizontalStackLayout>
-
-                <!--community page button-->
                 <VerticalStackLayout Grid.Column="0"
-                                     Margin="5"
                                      Grid.Row="1"
-                                     VerticalOptions="Center"
-                                     HorizontalOptions="Center">
-                    <Image Source="community.svg"
+                                     Spacing="2"
+                                     BackgroundColor="#FAD3D3">
+
+
+                    <Image Source="community.png"
                            WidthRequest="24"
-                           HeightRequest="24" />
+                           HeightRequest="24"
+                           Margin="0,2,0,0"
+                           VerticalOptions="Center" />
                     <Label Text="community"
                            TextColor="Black"
-                           FontSize="Micro" />
+                           FontSize="Micro"
+                           HorizontalTextAlignment="Center" />
                 </VerticalStackLayout>
 
-                <!--clock page button-->
+                <!--chart page button-->
                 <VerticalStackLayout Grid.Column="1"
-                                     Margin="5"
                                      Grid.Row="1"
-                                     VerticalOptions="Center"
-                                     HorizontalOptions="Center">
-                    <Image Source="clock.svg"
+                                     Spacing="2"
+                                     Margin="0,0,-10,0"
+                                     BackgroundColor="#FAD3D3">
+
+
+                    <Image Source="clock.png"
+                           Margin="0,2,0,0"
                            WidthRequest="24"
-                           HeightRequest="24" />
-                    <Label Text="Chart"
+                           HeightRequest="24"
+                           VerticalOptions="Center" />
+                    <Label Text="chart"
                            TextColor="Black"
-                           FontSize="Micro" />
+                           FontSize="Micro"
+                           HorizontalTextAlignment="Center" />
                 </VerticalStackLayout>
 
                 <!--custom curve shape-->
-                <HorizontalStackLayout Grid.Row="1"
+                <!--<VerticalStackLayout Grid.Row="1"
                                        Grid.Column="2"
                                        Grid.RowSpan="1"
-                                       BackgroundColor="White">
+                      BackgroundColor="Transparent"
+                                       >
 
                     <Path Fill="#00FBC1BC"
+                                                      
+                          Background="red"
                           Stroke="black"
                           StrokeThickness="1">
                         <Path.Data>
                             <EllipseGeometry Center="50,0"
                                              RadiusX="50"
                                              RadiusY="42" />
+                            
                         </Path.Data>
                     </Path>
-                </HorizontalStackLayout>
+
+                    <Image Source="lay.png"
+                           WidthRequest="50"
+                           HeightRequest="50" />
+                    
+                </VerticalStackLayout>-->
+
+                <!-- new custom curve shape-->
+                <Image Source="lay2.png"
+                       Grid.Row="1"
+                       Grid.Column="2"
+                       Grid.RowSpan="1"
+                       WidthRequest="90"
+                       BackgroundColor="Transparent"
+                       HeightRequest="50" />
 
                 <!--Main button (Rocket)-->
                 <Frame Grid.Column="2"
                        Grid.Row="0"
                        Grid.RowSpan="2"
-                       BorderColor="Black"
-                       BackgroundColor="#18FAFA"
+                       BorderColor="#F4808080"
+                       BackgroundColor="#FC8499"
                        CornerRadius="50"
-                       HeightRequest="70"
-                       WidthRequest="70"
+                       HeightRequest="55"
+                       WidthRequest="55"
+                       Margin="0,0,1,5"
                        IsClippedToBounds="True"
                        HorizontalOptions="Center"
                        VerticalOptions="Center">
 
-                    <Image Source="rocket.svg"
-                           Scale="1.2" />
+                    <Image Source="rocket.png"
+                           Scale="2" />
                 </Frame>
-
-                <!--Line-->
-                <HorizontalStackLayout     Grid.Row="1"
-                                           Grid.Column="3"
-                                           Grid.ColumnSpan="2"
-                                           BackgroundColor="White">
-
-                    <BoxView VerticalOptions="Start"
-                             HeightRequest="1"
-                             WidthRequest="1000"
-                             BackgroundColor="LightGray" />
-                </HorizontalStackLayout>
 
                 <!--account page button-->
                 <VerticalStackLayout Grid.Column="3"
-                                     Margin="5"
                                      Grid.Row="1"
-                                     VerticalOptions="Center"
-                                     HorizontalOptions="Center">
-                    <Image Source="account.svg"
+                                     Spacing="2"
+                                     Margin="-10,0,0,0"
+                                     BackgroundColor="#FAD3D3">
+
+                    <Image Source="account.png"
                            WidthRequest="24"
-                           HeightRequest="24" />
+                           Margin="0,2,0,0"
+                           HeightRequest="24"
+                           VerticalOptions="Center" />
                     <Label Text="account"
                            TextColor="Black"
-                           FontSize="Micro" />
+                           FontSize="Micro"
+                           HorizontalTextAlignment="Center" />
                 </VerticalStackLayout>
+
 
                 <!--settings page button-->
                 <VerticalStackLayout Grid.Column="4"
-                                     Margin="5"
                                      Grid.Row="1"
-                                     VerticalOptions="Center"
-                                     HorizontalOptions="Center">
-                    <Image Source="settings.svg"
+                                     Spacing="2"
+                                     BackgroundColor="#FAD3D3">
+
+
+                    <Image Source="settings.png"
                            WidthRequest="24"
-                           HeightRequest="24" />
-                    <Label Text="settings"
+                           Margin="0,2,0,0"
+                           HeightRequest="24"
+                           VerticalOptions="Center" />
+                    <Label Text="setting"
                            TextColor="Black"
-                           FontSize="Micro" />
+                           FontSize="Micro"
+                           HorizontalTextAlignment="Center" />
                 </VerticalStackLayout>
 
             </Grid>
